@@ -28,7 +28,12 @@ cv2.destroyAllWindows()
 
 
 center = (img.shape[1] / 2, img.shape[0] / 2)
-cv2.circle(img, (50,100), 60, (255, 0, 0 ), 2)
+cv2.circle(img, (70,100), 60, (255, 0, 0 ), 2)
 cv2.imshow("image", img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+cv2.putText(img,"hello world",(0,30),cv2.FONT_HERSHEY_SIMPLEX,1,(  55,128,255),2 )
+cv2.imshow("image",img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
